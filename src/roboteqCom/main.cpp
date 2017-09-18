@@ -292,10 +292,6 @@ void    RoboteqLogger::Log(const std::string& message)
             pthread_mutex_unlock(&_mx);
     }
 }
-void MixedModeChange(char mode)
-{
-	_communicator.IssueCommand("^MXMD " + mode);
-}
 
 
 
