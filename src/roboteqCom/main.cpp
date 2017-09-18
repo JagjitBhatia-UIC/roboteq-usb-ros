@@ -293,5 +293,11 @@ void    RoboteqLogger::Log(const std::string& message)
     }
 }
 
+void RoboteqLoger::MixedModeChange(char mode)
+{
+	_communicator.IssueCommand("^MXMD " + mode);
+}
+
+
 
 
